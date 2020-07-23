@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="img/Icono.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>MisNotas</title>
+</head>
+
+<body>
+
+    <!-- -------------------------------------- -->
+    <!-- PROYECTO NOTAS, CRISTHIAN MAHECHA [^^] -->
+    <!-- -------------------------------------- -->
+
+    <!-- CABECERA/MENU -->
+    <header>
+        <!-- FONDO LATERAL -->
+        <div class='header-barra'>
+            <div class="HeaderInfoUsuario">
+                <p>Hola!</p>
+                <p id="UserName">Usuario</p>
+            </div>
+        </div>
+
+        <!-- SECCION 1 -->
+        <div class="GestorNotas seccion1">
+            <h1>Gestor Tareas</h1>
+            <div class="Opciones">
+                <ul>
+                    <li>
+                        <div class="Icono" id="ClickAgregarTarea">
+                            <p>+</p>
+                        </div>
+                        <p>Agregar Tarea</p>
+                    </li>
+
+                    <li>
+                        <div class="Icono" id="ClickVerTarea">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                        <p>Ver Tarea</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CUADRO AGREGAR NOTAS -->
+            <div class="AgregaNota">
+                <h2>Nota</h2>
+
+                <form action="#" id="FormularioNotas">
+                    <input type="text" class="Inpt" placeholder="Escribe Una Nota" id="Nota">
+
+                    <!-- MENSAJE NOTA ENVIADA -->
+                    <div class="NotaEnviada">
+                        <p>Tu nota ah sido Guardada!</p>
+                    </div>
+
+                    <!-- MENSAJE NOTA VACIA -->
+                    <div class="NotaError">
+                        <p>Tu nota esta Vacia!</p>
+                    </div>
+
+                    <div class="BtnAgregar">
+                        <input type="submit" value="Agregar">
+                    </div>
+                </form>
+            </div>
+
+            <!-- FONDO OSO -->
+            <div class="FondoOso">
+                <img src="img/panda.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- SECCION 2 VER NOTAS -->
+        <div class="GestorNotas seccion2">
+            <h1>Gestor Tareas</h1>
+            <div class="Opciones">
+                <ul>
+                    <li>
+                        <div class="Icono" id="ClickVolverTarea">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                        <p>Volver</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CUADRO VER NOTAS -->
+            <div class="InfoText">
+                <p>Tus Tareas!</p>
+                <a href="#" id="Limpiar">Limpiar</a>
+            </div>
+
+            <!-- AGREGANDO CADA NOTA EN LI -->
+            <div class="TodasNotas" id="CuadroGuardarNotas"></div>
+
+            <!-- FONDO OSO -->
+            <div class="FondoOso2">
+                <img src="img/panda.jpg" alt="">
+            </div>
+        </div>
+
+    </header>
+
+    <!-- SCRIPT -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
